@@ -5,7 +5,7 @@
             <div style="margin:20px 0; text-align:center; font-size: 24px"><b>register</b></div>
             <el-form :model="user" :rules="rules" ref="userForm">
             <el-form-item prop="username">
-                <el-input placeholder="please input password" size="medium" style="margin:5px 0 " prefix-icon="el-icon-user" v-model="user.username" ></el-input>
+                <el-input placeholder="please input username" size="medium" style="margin:5px 0 " prefix-icon="el-icon-user" v-model="user.username" ></el-input>
             </el-form-item>
             <el-form-item prop="password">
                 <el-input placeholder="please input password" size="medium" style="margin:5px 0 " prefix-icon="el-icon-lock" show-password v-model="user.password" ></el-input>

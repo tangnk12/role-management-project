@@ -38,7 +38,19 @@ const routes = [
             name: '404',
 
            component:()=>import('../views/404.vue')
-          }
+          },
+          {
+            path: '/home',
+            name: 'Home',
+  
+           component:()=>import('../views/Home.vue')
+        },
+        {
+            path: '/manager',
+            name: 'Manager',
+  
+           component:()=>import('../views/Manager.vue')
+        },
 
 ]
 
@@ -59,7 +71,7 @@ export const setRoutes =() =>{
     if(storeMenus){
 
             const currentRoutesNames =router.getRoutes().map(v=>v.name)
-            if(!currentRoutesNames.includes('Manager')){
+            if(!currentRoutesNames.includes('Manager')){ 
               const manageRoute={
                         path:'/',
                         name:'Manager',
