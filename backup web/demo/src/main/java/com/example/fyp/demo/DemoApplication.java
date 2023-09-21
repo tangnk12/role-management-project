@@ -12,9 +12,6 @@ import springfox.documentation.oas.annotations.EnableOpenApi;
 
 @RequestMapping("/user")
 public class DemoApplication {
-
-
-
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
